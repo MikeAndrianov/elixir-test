@@ -66,3 +66,16 @@ Requirements for public functions provided by `ExBanking` module. Any function s
 - In every single moment of time the system should handle 10 or less operations for every individual user (user is a string passed as the first argument to API functions). If there is any new operation for this user and he/she still has 10 operations in pending state - new operation for this user should immediately return `too_many_requests_to_user` error until number of requests for this user decreases < 10
 - The system should be able to handle requests for different users in the same moment of time
 - Requests for user A should not affect to performance of requests to user B (maybe except `send` function when both A and B users are involved in the request)
+
+
+
+
+### Main criterias
+
+- Understanding of mutlithreading
+- Understanding how Erlang VM (BEAM) works
+- Understanding of Erlang processes
+- Understanding of Erlang processes messaging
+- Understanding of immutable data
+- Understanding of basic OTP principles (applications, supervisors etc)
+- Understanding of basic OTP behaviours (gen_server, supervisor)
